@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Lnguzo/SokoPoa/issues"
   },
-  "homepage": "https://github.com/Lnguzo/SokoPoa#readme"
+  "homepage": "https://github.com/Lnguzo/SokoPoa#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
+  }
 }
