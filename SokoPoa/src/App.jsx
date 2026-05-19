@@ -1,7 +1,7 @@
 import React from 'react'
 import AnalysisSidebar from './Seller/AnalysisSidebar'
 
-export const App = () => {
+export default function App  () {
   return (
     <div>
       < AnalysisSidebar />
