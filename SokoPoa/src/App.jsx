@@ -1,10 +1,10 @@
 import React from 'react'
-import AnalysisSidebar from './Seller/AnalysisSidebar'
+
 
 export default function App() {
   return (
     <div>
-      <AnalysisSidebar />
+      <h1>Welcome to SokoPoa!</h1>
     </div>
   )
 }
