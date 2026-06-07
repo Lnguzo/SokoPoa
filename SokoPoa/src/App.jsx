@@ -38,7 +38,7 @@ export default function App() {
           <div className="bg-white/20 p-1 rounded-full">
             <Plus className="w-6 h-6" />
           </div>
-          <span className="font-title-md pr-2">Post Service</span>
+          <span className="font-title-md pr-2">Post Services</span>
         </motion.button>
       </main>
     </div>
