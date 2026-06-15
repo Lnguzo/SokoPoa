@@ -19,7 +19,7 @@ export default function AnalysisSidebar() {
           <h3 className="font-headline-md font-bold mb-1 leading-tight">Q4 Market Trends Report</h3>
           <p className="font-body-md text-outline-variant mb-4">Unlock deep competitive analysis and sector pricing benchmarks.</p>
           <button className="bg-surface-container-lowest text-on-surface px-6 py-2.5 rounded-xl font-label-md font-bold w-full hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm">
-            Download PDF
+            Download PDF.
           </button>
         </div>
       </div>
