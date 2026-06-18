@@ -1,4 +1,4 @@
-const port = 4000;
+const port = 5000;
 const express = require ("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 //Database connection with Mo
-mongoose.connect("mongodb+srv://lucynguzo:lazri@2026@sokopoa-cluster.bl81wv2.mongodb.net/")
+mongoose.connect("mongodb+srv://lucynguzo:12345lazri@sokopoa-cluster.bl81wv2.mongodb.net/")
 
 
 //API Creation
@@ -21,6 +21,30 @@ mongoose.connect("mongodb+srv://lucynguzo:lazri@2026@sokopoa-cluster.bl81wv2.mon
 app.get("/", (req, res) => {
          res.send("Express app is running")
 })
+
+//Image storage engine 
+
+const storage = multer.diskStorage({
+    destination: "./upload/images",
+    filename: (req, file, cb) => {
+        return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
+    }
+})
+
+
+const upload = multer({
+    storage: storage
+})
+
+//Creating upload
+ app.use ('/images',express.static('upload/images'))  
+app.post("/upload", upload.single('product'), (req, res) => {
+    res.json({ success: 1, image_url:'http://${port}/images/${req.file.filename}'})
+
+})
+
+
+
 
 
 
