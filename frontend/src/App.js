@@ -1,12 +1,12 @@
 
 import './App.css';
-import Navbar from './components/Asset/Navbar/Navbar';
+
 
 function App() {
   return (
-    <div>
-     <Navbar /> 
-    </div>
+    <h1 className="text-4xl font-bold text-blue-500">
+      Tailwind is working!
+    </h1>
   );
 }
 
